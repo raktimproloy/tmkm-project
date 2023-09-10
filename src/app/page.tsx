@@ -1,10 +1,11 @@
 import Image from 'next/image'
-import HomePage from '@/components/pages/home/index'
-
+import HeroSection from '@/components/shared/heroSection'
+import BodySection from '@/components/shared/bodySection'
 export default function Home() {
   return (
     <>
-  <HomePage/>
+      <HeroSection/>
+      <BodySection/>
     </>
   )
 }
