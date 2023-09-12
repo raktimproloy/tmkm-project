@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/shared/navbar';
-import HeroSection from '@/components/pages/home/HeroSection';
 import Footer from '@/components/shared/footer';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,6 +23,7 @@ export default function RootLayout({
         {children}
         <Footer/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js" async/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/datepicker.min.js" async/>
       </body>
     </html>
   )

@@ -1,6 +1,8 @@
 import { StudentPortal } from "@/services/icons/Icons";
 import { UserIcon } from "@/services/icons/Icons";
 import StudentLogin from "./studentLogin";
+import Link from "next/link";
+
 export default function NavbarButtons() {
     return (
         <>
@@ -38,13 +40,13 @@ export default function NavbarButtons() {
 <div id="dropdown" className="z-10 hidden bg-[#f7fef726] backdrop-blur-sm divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
     <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="loginDropdown">
       <li>
-        <a href="#" className="block px-4 py-2 hover:bg-[#b9e7b9] dark:hover:text-white">Admin</a>
+        <Link href="/login" className="block px-4 py-2 hover:bg-[#b9e7b9] dark:hover:text-white">Teacher</Link>
       </li>
       <li>
-        <a href="#" className="block px-4 py-2 hover:bg-[#b9e7b9] dark:hover:text-white">MMS</a>
+        <Link href="/login" className="block px-4 py-2 hover:bg-[#b9e7b9] dark:hover:text-white">Parent</Link>
       </li>
       <li>
-        <a href="#" className="block px-4 py-2 hover:bg-[#b9e7b9] dark:hover:text-white">Student Portal</a>
+        <Link href="/login" className="block px-4 py-2 hover:bg-[#b9e7b9] dark:hover:text-white">Student</Link>
       </li>
     </ul>
 </div>

@@ -1,3 +1,6 @@
+import Image from "next/image";
+import HeroSectionImage from "@/../public/image/heroSection.jpeg";
+
 export default function HeroSection() {
     return(
         <>
@@ -13,7 +16,7 @@ export default function HeroSection() {
             </a> 
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSpiKziO3ymjBnZ-osBJxmBQqMA9SdpDTU5bJp755jEBot5oTHRWQoUravKCt66gQEM" className="rounded" alt="mockup"/>
+            <Image width={500} height={500} src={HeroSectionImage} className="rounded" alt="mockup"/>
         </div>                
     </div>
 </section>

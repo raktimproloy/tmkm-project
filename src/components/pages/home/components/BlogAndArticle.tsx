@@ -1,3 +1,7 @@
+import Image from "next/image";
+import BlogThumbnail from "@/../public/image/image-1.jpg";
+import GreenBtn from "@/components/shared/greenButton";
+
 export default function BlogAndArticle() { return ( <>
     <div className="max-w-screen-xl m-auto mt-16 my-10 p-5">
       <h5 className="text-center text-xs"> Blog And Article </h5>
@@ -5,7 +9,7 @@ export default function BlogAndArticle() { return ( <>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div className="max-w-sm bg-white border border-gray-200 rounded shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
-            <img className="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+            <Image className="rounded-t-lg" width={500} height={500} src={BlogThumbnail} alt="bog_thumbnail" />
           </a>
           <div className="p-5">
             <a href="#" className="hover:text-green-500 w-fit">
@@ -20,7 +24,7 @@ export default function BlogAndArticle() { return ( <>
         </div>
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
-            <img className="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+          <Image className="rounded-t-lg" width={500} height={500} src={BlogThumbnail} alt="bog_thumbnail" />
           </a>
           <div className="p-5">
             <a href="#" className="hover:text-green-500 w-fit">
@@ -35,7 +39,7 @@ export default function BlogAndArticle() { return ( <>
         </div>
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
-            <img className="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
+          <Image className="rounded-t-lg" width={500} height={500} src={BlogThumbnail} alt="bog_thumbnail" />
           </a>
           <div className="p-5">
             <a href="#" className="hover:text-green-500 w-fit">
@@ -50,9 +54,9 @@ export default function BlogAndArticle() { return ( <>
         </div>
       </div>
       <div className="w-full flex justify-end">
-    <a href="#" className="bg-green-500 hover:bg-green-600 rounded text-white px-5 py-2 my-5">
-        See More Blog
-    </a>
+  
+  <GreenBtn text={'See more'}/>
+
 </div>
     </div>
   </> ); }
