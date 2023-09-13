@@ -1,6 +1,12 @@
 import React from "react";
 
-export default function TextWithImagePlaceholder({title,routeTextWithBold,routeTextWithGray}) {
+interface Props{
+    title: string,
+    routeTextWithBold: string,
+    routeTextWithGray: string
+}
+
+export default function TextWithImagePlaceholder({title,routeTextWithBold,routeTextWithGray}: Props) {
     return (
         <>
 
