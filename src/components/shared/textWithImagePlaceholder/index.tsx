@@ -16,7 +16,7 @@ export default function TextWithImagePlaceholder({title,routeTextWithBold,routeT
                 <div className="text-xl font-semibold">
                     <h1 className="text-4xl text-white">{title}</h1>
                     <div className="bg-gray-300 rounded my-5 text-center">
-                        <span className="text-gray-800">{routeTextWithBold}/ <span className="text-gray-500">{routeTextWithGray}</span> </span>
+                        <span className="text-gray-800">{routeTextWithBold}/<span className="text-gray-500">{routeTextWithGray}</span> </span>
                     </div>
                 </div>
             </div>
