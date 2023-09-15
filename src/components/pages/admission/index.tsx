@@ -1,6 +1,4 @@
 import TextWithImagePlaceholder from "@/components/shared/textWithImagePlaceholder";
-import AdmissionCard from "./admissionCard";
-import NewStudentSvg from "./admissionSvgIcons/newStudent";
 
 export default function AdmissionPage() {
     return (
