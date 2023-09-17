@@ -7,7 +7,7 @@ import { useState } from "react";
 import axios from "axios";
 import AuthVerification from "@/utils/authVerify";
 
-export default function index() { 
+export default function Index() { 
 
     const router = useRouter();
     const [showSpinner, setShowSpinner] = useState(false);

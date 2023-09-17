@@ -2,11 +2,12 @@
 import InputField from "@/components/shared/inputField";
 import GoBackAnimatedBtn from "@/components/shared/goBackAnimatedBtn";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 export default function CreateNotice() {
 
     const [showSpinner, setShowSpinner] = useState(false);
+    const [token, setToken] = useState<undefined | string>()
 
     const monthNames = [
         "January", "February", "March", "April", "May", "June",
@@ -28,8 +29,9 @@ export default function CreateNotice() {
             ...noticeData, [e.target.name]:e.target.value
         })
     }
-
-    const token =  localStorage.getItem('_token');
+    useEffect(() => {
+        setToken(localStorage.getItem('_token') || "")
+      }, [])
 
     function handleSubmit(e:any) {
         e.preventDefault();        

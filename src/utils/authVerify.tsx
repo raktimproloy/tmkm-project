@@ -3,7 +3,7 @@ import jwt_decode from "jwt-decode";
 interface DecodedToken {
   exp: number;
   userId: string;
-  userFullName: string;
+  fullName: string;
   email: string;
   userType: string
 }
@@ -47,7 +47,7 @@ function AuthVerification() {
   return {
     isExp: true,
     userId: decodedToken.userId,
-    fullName: decodedToken.userFullName,
+    fullName: decodedToken.fullName,
     email: decodedToken.email,
     userType: decodedToken.userType
 
